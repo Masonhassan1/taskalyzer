@@ -42,7 +42,7 @@
     "chart.js": "2.9.3",
     "classnames": "2.2.6",
     "moment": "2.24.0",
-    "node-sass": "4.13.1",
+    "node-sass": "^4.14.1",
     "nouislider": "14.1.1",
     "prop-types": "^15.7.2",
     "react": "16.12.0",
@@ -60,7 +60,7 @@
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
-    "serve": "^11.3.0"
+    "serve": "^11.3.2"
   },
   "devDependencies": {
     "@types/googlemaps": "3.39.2",
