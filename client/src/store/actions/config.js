@@ -20,3 +20,5 @@ export const headerConfig = (getState) => {
 
     return config;
 };
+const port = process.env.PORT ? process.env.PORT : '5000';
+export const baseUrl = "http://localhost:"+port.toString();

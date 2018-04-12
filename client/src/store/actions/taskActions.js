@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 import * as actionTypes from './actionTypes';
-import { headerConfig } from './config';
+import { headerConfig, baseUrl } from './config';
 
 // CREATE A TASK
 export const createTask = (task) => (dispatch, getState) => {
@@ -9,7 +9,7 @@ export const createTask = (task) => (dispatch, getState) => {
         type: actionTypes.TASK_CREATE_START
     });
     axios
-        .post('/api/tasks', task, headerConfig(getState))
+        .post(baseUrl+'/api/tasks', task, headerConfig(getState))
         .then((res) => {
             dispatch({
                 type: actionTypes.TASK_CREATE_SUCCESS,
@@ -47,7 +47,7 @@ export const fetchAllTasks = () => (dispatch, getState) => {
         type: actionTypes.TASKS_READ_START
     });
     axios
-        .get('/api/tasks', headerConfig(getState))
+        .get(baseUrl+'/api/tasks', headerConfig(getState))
         .then((res) => {
             dispatch({
                 type: actionTypes.TASKS_READ_SUCCESS,
@@ -85,7 +85,7 @@ export const fetchTaskById = (id) => (dispatch, getState) => {
         type: actionTypes.TASK_READ_START
     });
     axios
-        .get(`/api/tasks/${id}`, headerConfig(getState))
+        .get(baseUrl+`/api/tasks/${id}`, headerConfig(getState))
         .then((res) => {
             console.log(res);
             dispatch({
@@ -126,7 +126,7 @@ export const updateTask = (task) => (dispatch, getState) => {
         type: actionTypes.TASK_UPDATE_START
     });
     axios
-        .patch(`/api/tasks/${id}`, task, headerConfig(getState))
+        .patch(baseUrl+`/api/tasks/${id}`, task, headerConfig(getState))
         .then((res) => {
             dispatch({
                 type: actionTypes.TASK_UPDATE_SUCCESS,
@@ -164,7 +164,7 @@ export const deleteTask = (id) => (dispatch, getState) => {
         type: actionTypes.TASK_DELETE_START
     });
     axios
-        .delete(`/api/tasks/${id}`, headerConfig(getState))
+        .delete(baseUrl+`/api/tasks/${id}`, headerConfig(getState))
         .then((res) => {
             dispatch({
                 type: actionTypes.TASK_DELETE_SUCCESS,

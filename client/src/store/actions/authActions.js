@@ -1,10 +1,11 @@
 import axios from 'axios';
 
 import * as actionTypes from './actionTypes';
-import { headerConfig } from './config';
+import { headerConfig, baseUrl } from './config';
 
 // LOGIN USER
 export const login = (user) => (dispatch) => {
+    console.log(baseUrl);
     dispatch({
         type: actionTypes.AUTH_START
     });
@@ -12,7 +13,7 @@ export const login = (user) => (dispatch) => {
         type: actionTypes.TASKS_READ_START
     });
     axios
-        .post('/api/auth/login', user)
+        .post(baseUrl+'/api/auth/login', user)
         .then((res) => {
             dispatch({
                 type: actionTypes.AUTH_SUCCESS,
@@ -64,7 +65,7 @@ export const register = (user) => (dispatch) => {
         type: actionTypes.AUTH_START
     });
     axios
-        .post('/api/auth/signup', user)
+        .post(baseUrl+'/api/auth/signup', user)
         .then((res) => {
             dispatch({
                 type: actionTypes.AUTH_SUCCESS,
@@ -105,7 +106,7 @@ export const loadUser = () => (dispatch, getState) => {
         type: actionTypes.TASKS_READ_START
     });
     axios
-        .get('/api/auth/user', headerConfig(getState))
+        .get(baseUrl+'/api/auth/user', headerConfig(getState))
         .then((res) => {
             dispatch({
                 type: actionTypes.USER_LOADED,
@@ -150,7 +151,7 @@ export const updateUser = ({ email }) => (dispatch, getState) => {
         type: actionTypes.USER_UPDATE_START
     });
     axios
-        .patch('/api/auth/user', { email }, headerConfig(getState))
+        .patch(baseUrl+'/api/auth/user', { email }, headerConfig(getState))
         .then((res) => {
             dispatch({
                 type: actionTypes.USER_UPDATE_SUCCESS,
