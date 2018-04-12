@@ -20,4 +20,4 @@ export const headerConfig = (getState) => {
 
     return config;
 };
-export const baseUrl = process.env.NODE_ENV === 'production' ? "https://taskalyzer.herokuapp.com:"+process.env.PORT : 'http://localhost:5000';
+export const baseUrl = process.env.NODE_ENV === 'production' ? "" : 'http://localhost:5000';
