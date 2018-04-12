@@ -41,7 +41,7 @@ const AdminNavbar = (props) => {
                                         </span>
                                         <Media className="ml-2 d-none d-lg-block">
                                             <span className="mb-0 text-sm font-weight-bold">
-                                                {user.userName}
+                                                {Object.prototype.hasOwnProperty.call(user, 'userName') && user.userName}
                                             </span>
                                         </Media>
                                     </Media>
@@ -53,7 +53,7 @@ const AdminNavbar = (props) => {
                                         tag="div"
                                     >
                                         <h6 className="text-overflow m-0">
-                                            Welcome! {user.userName}
+                                            Welcome! {Object.prototype.hasOwnProperty.call(user, 'userName') && user.userName}
                                         </h6>
                                     </DropdownItem>
                                     <DropdownItem
