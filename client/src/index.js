@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 import 'react-notification-alert/dist/animate.css';
@@ -15,7 +15,7 @@ import AuthLayout from 'layouts/Auth';
 
 ReactDOM.render(
     <Provider store={store}>
-        <BrowserRouter>
+        <HashRouter>
             <Switch>
                 <Route
                     path="/admin"
@@ -24,7 +24,7 @@ ReactDOM.render(
                 <Route path="/auth" render={(props) => <AuthLayout {...props} />} />
                 <Redirect from="/" to="/auth/login" />
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     </Provider>,
     document.getElementById('root')
 );
