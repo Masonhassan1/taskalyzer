@@ -18,7 +18,7 @@ class Footer extends React.Component {
                                 rel="noopener noreferrer"
                                 target="_blank"
                             >
-                                Task<span className="text-info">Berry</span>
+                                Task<span className="text-info">Alyzer</span>
                             </a>
                         </div>
                     </Col>

@@ -20,7 +20,7 @@ class Login extends React.Component {
                                         target="_blank"
                                     >
                                         Task
-                                        <span className="text-info">Berry</span>
+                                        <span className="text-info">Alyzer</span>
                                     </a>
                                 </div>
                             </Col>

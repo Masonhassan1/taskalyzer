@@ -21,7 +21,7 @@ const AdminNavbar = (props) => {
                 <Container className="px-4">
                     <NavbarBrand to="/" tag={Link}>
                         <h1>
-                            Task<span className="text-info">Berry</span>
+                            Task<span className="text-info">Alyzer</span>
                         </h1>
                     </NavbarBrand>
                     <button
@@ -38,7 +38,7 @@ const AdminNavbar = (props) => {
                                     <Link to="/">
                                         <h1>
                                             Task
-                                            <span className="text-info">Berry</span>
+                                            <span className="text-info">Alyzer</span>
                                         </h1>
                                     </Link>
                                 </Col>

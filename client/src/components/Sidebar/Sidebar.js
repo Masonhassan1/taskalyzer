@@ -115,7 +115,7 @@ class Sidebar extends React.Component {
                     {logo ? (
                         <NavbarBrand className="pt-0" {...navbarBrandProps}>
                             <h1>
-                                Task<span className="text-info">Berry</span>
+                                Task<span className="text-info">Alyzer</span>
                             </h1>
                         </NavbarBrand>
                     ) : null}
@@ -194,7 +194,7 @@ class Sidebar extends React.Component {
                                                 <h1>
                                                     Task
                                                     <span className="text-info">
-                                                        Berry
+                                                        Alyzer
                                                     </span>
                                                 </h1>
                                             </Link>
@@ -203,7 +203,7 @@ class Sidebar extends React.Component {
                                                 <h1>
                                                     Task
                                                     <span className="text-info">
-                                                        Berry
+                                                        Alyzer
                                                     </span>
                                                 </h1>
                                             </a>
