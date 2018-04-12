@@ -1,7 +1,7 @@
 {
-  "name": "taskberry",
+  "name": "taskalyzer",
   "version": "1.0.3",
-  "description": "TaskBerry | Productivity and Task Management Tool",
+  "description": "TaskAlyzer | Productivity and Task Management Tool",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
@@ -17,7 +17,7 @@
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run install:client && npm run build"
   },
   "keywords": [
-    "TaskBerry",
+    "TaskAlyzer",
     "Productivity",
     "Task",
     "Todo",

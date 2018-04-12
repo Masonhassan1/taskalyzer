@@ -31,7 +31,7 @@ class Login extends React.Component {
                                             href="/"
                                             target="_blank"
                                         >
-                                            TaskBerry
+                                            TaskAlyzer
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>

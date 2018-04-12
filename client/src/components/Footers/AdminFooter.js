@@ -31,7 +31,7 @@ class Footer extends React.Component {
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
-                                    TaskBerry
+                                    TaskAlyzer
                                 </NavLink>
                             </NavItem>
 

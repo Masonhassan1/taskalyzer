@@ -1,4 +1,4 @@
-# TaskBerry | A Productivity and Time Management Application
+# TaskAlyzer | A Productivity and Time Management Application
 
 Full stack web application build with MERN stack<br/>
 
@@ -102,8 +102,8 @@ Full stack web application build with MERN stack<br/>
 
 ```bash
 PORT=5000
-MONGODB_URI=mongodb://localhost/taskberry
-JWT_KEY=TASKBERRY_SECRET_KEY
+MONGODB_URI=mongodb://localhost/TaskAlyzer
+JWT_KEY=TaskAlyzer_SECRET_KEY
 ```
 
 > Note: The production backend server finds environment variables in `.env` file.

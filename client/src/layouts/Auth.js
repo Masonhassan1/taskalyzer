@@ -43,7 +43,7 @@ class Auth extends React.Component {
                                 <Row className="justify-content-center">
                                     <Col lg="5" md="6">
                                         <h1 className="text-dark">
-                                            Welcome to TaskBerry!
+                                            Welcome to TaskAlyzer!
                                         </h1>
                                     </Col>
                                 </Row>

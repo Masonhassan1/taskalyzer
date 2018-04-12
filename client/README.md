@@ -1,6 +1,6 @@
-# TaskBerry Front End
+# TaskAlyzer Front End
 
-The front end of the TaskBerry project <br/>
+The front end of the TaskAlyzer project <br/>
 
 ## Table of Contents
 

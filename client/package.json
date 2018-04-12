@@ -1,10 +1,10 @@
 {
-  "name": "taskberry-client",
+  "name": "taskalyzer-client",
   "version": "1.0.1",
-  "description": "TaskBerry front-end",
+  "description": "TaskAlyzer front-end",
   "private": true,
   "keywords": [
-    "TaskBerry",
+    "TaskAlyzer",
     "client",
     "Productivity",
     "Todo",
