@@ -1,0 +1,6 @@
+{
+    "env": {
+        "MONGODB_URI": "mongodb://localhost/taskberry",
+        "JWT_KEY": "TASKBERRY_SECRET_KEY"
+    }
+}

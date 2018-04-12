@@ -1,0 +1,83 @@
+{
+  "name": "taskberry-client",
+  "version": "1.0.1",
+  "description": "TaskBerry front-end",
+  "private": true,
+  "keywords": [
+    "TaskBerry",
+    "client",
+    "Productivity",
+    "Todo",
+    "Task",
+    "Time Management"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md)\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "compile-sass": "node-sass src/assets/scss/argon-dashboard-react.scss src/assets/css/style.css",
+    "minify-sass": "node-sass src/assets/scss/argon-dashboard-react.scss src/assets/css/style.min.css --output-style compressed",
+    "map-sass": "node-sass src/assets/scss/argon-dashboard-react.scss src/assets/css/style.css --source-map true"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.12.1",
+    "axios": "^0.19.2",
+    "chart.js": "2.9.3",
+    "classnames": "2.2.6",
+    "moment": "2.24.0",
+    "node-sass": "4.13.1",
+    "nouislider": "14.1.1",
+    "prop-types": "^15.7.2",
+    "react": "16.12.0",
+    "react-chartjs-2": "2.9.0",
+    "react-copy-to-clipboard": "5.0.2",
+    "react-datetime": "2.16.3",
+    "react-dom": "16.12.0",
+    "react-google-maps": "9.4.5",
+    "react-notification-alert": "0.0.12",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "5.1.2",
+    "react-scripts": "^3.4.0",
+    "react-spinners": "^0.8.1",
+    "reactstrap": "8.4.1",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "serve": "^11.3.0"
+  },
+  "devDependencies": {
+    "@types/googlemaps": "3.39.2",
+    "@types/markerclustererplus": "2.1.33",
+    "@types/react": "16.9.19",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-flowtype": "3.13.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.8",
+    "prettier": "^2.0.2",
+    "typescript": "3.7.5"
+  },
+  "proxy": "http://localhost:5000"
+}

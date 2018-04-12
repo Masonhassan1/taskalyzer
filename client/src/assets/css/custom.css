@@ -1,0 +1,8 @@
+.auth-bg-image {
+    background-image: url('../img//images//TaskBerry-image.jpg');
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

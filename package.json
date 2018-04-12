@@ -1,0 +1,46 @@
+{
+  "name": "taskberry",
+  "version": "1.0.3",
+  "description": "TaskBerry | Productivity and Task Management Tool",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "build": "cd client && npm run build",
+    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md)\"",
+    "install:client": "npm install --prefix client",
+    "install:server": "npm install",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "start:server": "node index.js",
+    "start:client": "npm start --prefix client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run install:client && npm run build"
+  },
+  "keywords": [
+    "TaskBerry",
+    "Productivity",
+    "Task",
+    "Todo",
+    "Management"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.12",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "nodemon": "^2.0.3",
+    "prettier": "^2.0.5"
+  }
+}
