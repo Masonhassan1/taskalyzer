@@ -8,7 +8,7 @@
     "dev:client": "cd client && npm run dev",
     "build": "cd client && npm run build",
     "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md)\"",
-    "install:client": "npm install --prefix client",
+    "install:client": "cd client && npm install",
     "install:server": "npm install",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
