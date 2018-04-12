@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
+    "dev:client": "cd client && npm run dev",
     "build": "cd client && npm run build",
     "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md)\"",
     "install:client": "npm install --prefix client",
