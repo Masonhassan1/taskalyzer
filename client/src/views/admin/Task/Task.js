@@ -67,7 +67,7 @@ class Task extends Component {
     static getDerivedStateFromProps(nextProps, prevState) {
         const { isLoading, task } = nextProps;
         if (
-            !isLoading &&
+            !isLoading && (task !== null) && (task !== undefined) &&
             Object.prototype.hasOwnProperty.call(task, 'created') &&
             task.created !== prevState.created
         ) {
