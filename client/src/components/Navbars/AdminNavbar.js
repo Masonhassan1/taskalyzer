@@ -31,7 +31,7 @@ const AdminNavbar = (props) => {
                     >
                         {brandText}
                     </Link>
-                    {isLoading ? null : (
+                    {(isLoading === false) && (
                         <Nav className="align-items-center d-none d-md-flex" navbar>
                             <UncontrolledDropdown nav>
                                 <DropdownToggle className="pr-0" nav>
@@ -41,7 +41,7 @@ const AdminNavbar = (props) => {
                                         </span>
                                         <Media className="ml-2 d-none d-lg-block">
                                             <span className="mb-0 text-sm font-weight-bold">
-                                                {Object.prototype.hasOwnProperty.call(user, 'userName') && user.userName}
+                                                {Object.prototype.hasOwnProperty.call(user, 'userName') ? user.userName : null}
                                             </span>
                                         </Media>
                                     </Media>
@@ -53,7 +53,7 @@ const AdminNavbar = (props) => {
                                         tag="div"
                                     >
                                         <h6 className="text-overflow m-0">
-                                            Welcome! {Object.prototype.hasOwnProperty.call(user, 'userName') && user.userName}
+                                            Welcome! {Object.prototype.hasOwnProperty.call(user, 'userName') ? user.userName : null}
                                         </h6>
                                     </DropdownItem>
                                     <DropdownItem
