@@ -1,4 +1,4 @@
-# TaskBerry | A Productivity and Time Management Application
+# TaskAlyzer | A Productivity and Time Management Application
 
 Full stack web application build with MERN stack<br/>
 
