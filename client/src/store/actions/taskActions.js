@@ -87,6 +87,7 @@ export const fetchTaskById = (id) => (dispatch, getState) => {
     axios
         .get(`/api/tasks/${id}`, headerConfig(getState))
         .then((res) => {
+            console.log(res);
             dispatch({
                 type: actionTypes.TASK_READ_SUCCESS,
                 payload: res.data.result
