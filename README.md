@@ -42,6 +42,6 @@ The project is configured to deploy the production version to heroku by running 
 - Building the frontend
   `npm run build`
 
-- Configure environment variables `MONGODB_URI` and `JWT_KEY` in heroku 
+- Configure environment variables `MONGODB_URI` and `JWT_KEY`
 
 - `heroku-postbuild` command will automatically run when deployed to heroku.
